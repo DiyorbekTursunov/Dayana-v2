@@ -724,4 +724,11 @@ body {
   .cooperation__text {
     font-size: 16px;
   }
+  .cooperation {
+    padding-bottom: 0;
+  }
+  .cooperation__container {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
