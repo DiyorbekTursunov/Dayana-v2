@@ -347,6 +347,22 @@ body {
   color: #fff;
   background-color: #02074f;
   border: 1px solid transparent;
+  cursor: pointer;
+}
+
+/* Hover */
+.partnership__button:hover {
+  background-color: #03117d; /* lighter navy */
+  border-color: #02074f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Active */
+.partnership__button:active {
+  background-color: #01053a; /* darker navy */
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 
 .promo__button--secondary:hover {
@@ -402,15 +418,17 @@ body {
 /* === Benefits: 1-qator 3 ta, 2-qator 2 ta – hammasi o'rtada === */
 .benefits__list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
   margin-bottom: 20px;
-  row-gap: 20px;
+  gap: 20px;
 }
 
 .benefits__list_2 {
+  margin: 0 auto;
+  max-width: 794px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
   gap: 20px;
 }
@@ -484,6 +502,11 @@ body {
 @media screen and (max-width: 850px) {
   .about__title {
     font-size: 24px;
+  }
+
+  .benefits__list_2,
+  .benefits__list {
+    flex-wrap: wrap;
   }
 
   .about__content {
@@ -569,7 +592,7 @@ body {
 }
 
 .cooperation {
-    padding-bottom: 80px;
+  padding-bottom: 80px;
 }
 .cooperation__container {
   background-color: #000000;
